@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* Typography */
+.heading-1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.heading-2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.heading-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.heading-5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.subtitle-1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.subtitle-2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.body-1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.body-2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+.font-weight-regular {
+  font-weight: 400;
+}
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.font-weight-black {
+  font-weight: 900;
+}
+
+/* Text Alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justified {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    max-width: 85vw;
+  }
+
+  .heading-1 {
+    font-size: 2.5rem;
+  }
+  .heading-2 {
+    font-size: 2rem;
+  }
+  .heading-3 {
+    font-size: 1.5rem;
+  }
+  .heading-4 {
+    font-size: 1.25rem;
+  }
+  .heading-5 {
+    font-size: 1rem;
+  }
+
+  .subtitle-1 {
+    font-size: 1.5rem;
+  }
+  .subtitle-2 {
+    font-size: 1.15rem;
+  }
+  .body-1 {
+    font-size: 1rem;
+  }
+  .body-2 {
+    font-size: 0.875rem;
+  }
+}
