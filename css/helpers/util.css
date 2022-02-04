@@ -1,0 +1,16 @@
+/* Border Radius */
+.rounded-0 {
+  border-radius: 0;
+}
+.rounded-sm {
+  border-radius: 5px;
+}
+.rounded {
+  border-radius: 10px;
+}
+.rounded-lg {
+  border-radius: 15px;
+}
+.rounded-full {
+  border-radius: 100vh;
+}
