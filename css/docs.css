@@ -8,6 +8,11 @@
 .docs .nav {
   grid-area: header;
 
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -33,6 +38,10 @@
 
 .sidebar {
   grid-area: sidebar;
+
+  position: fixed;
+  top: 4rem;
+  bottom: 0;
   padding: 1rem;
 }
 
@@ -58,6 +67,7 @@
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .list-item.active a {
