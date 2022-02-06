@@ -1,0 +1,33 @@
+.alert {
+  display: block;
+  background-color: var(--color-default);
+  color: white;
+  padding: 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+}
+
+.alert-icon {
+  font-weight: bold;
+}
+
+.alert-primary {
+  color: var(--color-gray);
+  background-color: var(--color-primary);
+}
+.alert-success {
+  color: var(--color-gray);
+  background-color: var(--color-success);
+}
+.alert-warning {
+  color: var(--color-gray);
+  background-color: var(--color-warning);
+}
+.alert-error {
+  color: var(--color-gray);
+  background-color: var(--color-error);
+}
+.alert-info {
+  color: var(--color-gray);
+  background-color: var(--color-info);
+}
