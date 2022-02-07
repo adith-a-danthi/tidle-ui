@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="/docs/components/avatar/avatar.css" />
+    <link rel="stylesheet" href="./badge.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Badges • tidle UI</title>
+  </head>
+  <body>
+    <div class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Badges</h2>
+        <p class="body-2">
+          Badges are small circles, positioned either at top-right or
+          bottom-right of the parent component. Badge can be used to display
+          numbers, online / offline status, depending on the context.
+        </p>
+
+        <!-- Avatar Badges -->
+        <section id="avatar-badge">
+          <div class="divider"></div>
+
+          <p class="heading-4">Avatar Badges</p>
+          <div class="flex gap-1 my-4 align-items-end">
+            <div class="badge">
+              <img class="avatar" src="https://picsum.photos/50" alt="icon" />
+              <div class="badge-content online"></div>
+            </div>
+            <div class="badge">
+              <img class="avatar" src="https://picsum.photos/50" alt="icon" />
+              <div class="badge-content offline"></div>
+            </div>
+            <div class="badge">
+              <img class="avatar" src="https://picsum.photos/50" alt="icon" />
+              <div class="badge-content dnd"></div>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;div class="badge"&gt;
+                  &lt;img class="avatar" src="..." alt="..." /&gt;
+                  &lt;div class="badge-content online"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="badge"&gt;
+                  &lt;img class="avatar" src="..." alt="..." /&gt;
+                  &lt;div class="badge-content offline"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="badge"&gt;
+                  &lt;img class="avatar" src="..." alt="..." /&gt;
+                  &lt;div class="badge-content dnd"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Icon Badges -->
+        <section id="icon-badge">
+          <div class="divider"></div>
+
+          <p class="heading-4">Icon Badges</p>
+          <div class="flex gap-2 my-4 align-items-end">
+            <div class="badge">
+              <div class="fas fa-shopping-cart fa-lg"></div>
+              <div class="badge-content icon-number">8</div>
+            </div>
+            <div class="badge">
+              <div class="fas fa-envelope fa-lg"></div>
+              <div class="badge-content icon-number primary">8</div>
+            </div>
+            <div class="badge">
+              <div class="fas fa-bell fa-lg"></div>
+              <div class="badge-content icon-number dnd">8</div>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;div class="badge"&gt;
+                  &lt;div class="fas fa-shopping-cart fa-lg"&gt;&lt;/div&gt;
+                  &lt;div class="badge-content icon-number"&gt;8&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="badge"&gt;
+                  &lt;div class="fas fa-envelope fa-lg"&gt;&lt;/div&gt;
+                  &lt;div class="badge-content icon-number primary"&gt;8&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="badge"&gt;
+                  &lt;div class="fas fa-bell fa-lg"&gt;&lt;/div&gt;
+                  &lt;div class="badge-content icon-number dnd"&gt;8&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/components/avatar/avatar.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Avatar
+          </a>
+          <a href="" class="bottom-nav-link">
+            Buttons <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
