@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./buttons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Buttons • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="#">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Badge</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/buttons/buttons.html">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Buttons</h2>
+        <p class="body-2">
+          The classic button, in different colors, sizes, and states
+        </p>
+
+        <!-- Standard Buttons -->
+        <section id="standard-buttons">
+          <hr />
+
+          <p class="heading-4">Standard Buttons</p>
+          <div class="flex gap-1 my-4">
+            <button class="btn">Default</button>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-gray">Gray</button>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;button class="btn"&gt;Default&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;button class="btn btn-gray"&gt;Gray&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Outlined Buttons -->
+        <section id="outlined-buttons">
+          <hr />
+
+          <p class="heading-4">Outlined Buttons</p>
+          <div class="flex gap-1 py-4">
+            <button class="btn outlined">Default</button>
+            <button class="btn outlined btn-primary">Primary</button>
+            <button class="btn outlined btn-gray">Gray</button>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;button class="btn outlined"&gt;Default&lt;/button&gt;
+            &lt;button class="btn outlined btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn outlined btn-gray"&gt;Gray&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Floating Action Buttons -->
+        <section id="fab">
+          <hr />
+
+          <p class="heading-4">Floating Action Buttons</p>
+          <div class="flex gap-1 py-4 align-items-end">
+            <button class="btn fab">
+              <span class="fas fa-shopping-cart"></span>
+            </button>
+            <button class="btn fab btn-secondary">
+              <span class="fas fa-shopping-cart"></span>
+            </button>
+            <button class="btn fab btn-primary">
+              <span class="fas fa-shopping-cart"></span>
+            </button>
+            <button class="btn fab outlined btn-gray">
+              <span class="fas fa-shopping-cart"></span>
+            </button>
+            <button class="btn fab small-fab outlined">
+              <span class="fas fa-cog"></span>
+            </button>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;button class="btn fab"&gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;button class="btn fab btn-secondary"&gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;button class="btn fab btn-primary"&gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;button class="btn fab outlined btn-gray"&gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;button class="btn fab small-fab outlined"&gt;&lt;span class="fas fa-cog"&gt;&lt;/span&gt;&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Link Buttons -->
+        <section id="link-buttons">
+          <hr />
+
+          <p class="heading-4">Link Buttons</p>
+          <div class="flex gap-1 py-4">
+            <a href="#link-button" class="btn link">Link</a>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;a href="" class="btn link"&gt;Link&lt;/a&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Button Sizes -->
+        <section id="button-sizes">
+          <hr />
+
+          <p class="heading-4">Button Sizes</p>
+          <div class="flex gap-1 py-4 align-items-end">
+            <button class="btn large">Large</button>
+            <button class="btn">Regular</button>
+            <button class="btn small">Small</button>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;button class="btn large"&gt;Large&lt;/button&gt;
+            &lt;button class="btn"&gt;Regular&lt;/button&gt;
+            &lt;button class="btn small"&gt;Small&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Other Buttons -->
+        <section id="buttons-variants">
+          <hr />
+
+          <p class="heading-4">Other Variants</p>
+          <div class="flex gap-1 py-4 align-items-end">
+            <button class="btn">
+              <span class="fas fa-shopping-cart btn-icon"></span>
+              Add to Cart
+            </button>
+            <button class="btn outlined rounded">Rounded Btn</button>
+            <button class="btn outlined rounded-full">Rounded Btn</button>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;button class="btn"&gt;
+                &lt;span class="fas fa-shopping-cart btn-icon"&gt;&lt;/span&gt;
+                Add to Cart
+            &lt;/button&gt;
+            &lt;button class="btn outlined rounded"&gt;Rounded Btn&lt;/button&gt;
+            &lt;button class="btn outlined rounded-full"&gt;Rounded Btn&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/components/badge/badge.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Badge
+          </a>
+          <a href="#" class="bottom-nav-link">
+            Card <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
