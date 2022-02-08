@@ -37,11 +37,11 @@ body {
   height: 100%;
 }
 
-.divider {
-  width: 100%;
+hr {
   height: 1px;
-  background-color: var(--color-secondary-dark);
   margin: 1rem 0;
+  border: none;
+  background-color: var(--color-secondary-dark);
 }
 
 .hero {

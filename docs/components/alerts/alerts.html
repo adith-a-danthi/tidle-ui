@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./alerts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Alerts • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item active">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Alerts</h2>
+        <p class="body-2">
+          Alerts are used to communicate a state that affects a system, feature
+          or page.
+        </p>
+        <p class="body-2">
+          The alert component has four variants
+          <mark class="code">alert-success</mark>,
+          <mark class="code">alert-danger</mark>,
+          <mark class="code">alert-warning</mark> and
+          <mark class="code">alert-info</mark>
+        </p>
+
+        <!-- Standard Alerts -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Standard Alerts</p>
+          <div class="flex flex-col my-4">
+            <div class="alert">A simple alert.</div>
+            <div class="alert alert-success">
+              <span class="fas fa-check mr-2"></span> A simple success alert.
+            </div>
+            <div class="alert alert-warning">
+              <span class="fas fa-exclamation-triangle mr-2"></span> A simple
+              warning alert.
+            </div>
+            <div class="alert alert-error">
+              <span class="fas fa-times-circle mr-2"></span> A simple error
+              alert.
+            </div>
+            <div class="alert alert-info">
+              <span class="fas fa-info-circle mr-2"></span>A simple info alert.
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="alert"&gt;A simple alert.&lt;/div&gt;
+
+            &lt;div class="alert alert-success"&gt;
+                &lt;span class="fas fa-check mr-2"&gt;&lt;/span&gt;
+                A simple success alert.
+            &lt;/div&gt;
+
+            &lt;div class="alert alert-warning"&gt;
+                &lt;span class="fas fa-exclamation-triangle mr-2"&gt;&lt;/span&gt;
+                A simple warning alert.
+            &lt;/div&gt;
+
+            &lt;div class="alert alert-error"&gt;
+                &lt;span class="fas fa-times-circle mr-2"&gt;&lt;/span&gt;
+                A simple error alert.
+            &lt;/div&gt;
+
+            &lt;div class="alert alert-info"&gt;
+                &lt;span class="fas fa-info-circle mr-2"&gt;&lt;/span&gt;
+                A simple info alert.
+            &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/usage.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Usage
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
