@@ -5,8 +5,12 @@
   font-family: inherit;
   font-weight: 500;
   height: fit-content;
-  accent-color: var(--color-primary);
+  accent-color: var(--color-default);
   resize: none;
+}
+
+.input:disabled {
+  background-color: var(--color-secondary-dark);
 }
 
 .input.resize {

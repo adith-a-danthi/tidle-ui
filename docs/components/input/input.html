@@ -140,12 +140,48 @@
             <input class="input" type="date" name="date" />
             <input class="input" type="time" name="time" />
             <input class="input" type="file" name="file" />
+            <div class="flex gap-1">
+              <label>
+                <input class="input" type="checkbox" name="checkbox" />
+                Checkbox
+              </label>
+              <label>
+                <input class="input" type="checkbox" name="checkbox" checked />
+                Checkbox
+              </label>
+              <label>
+                <input class="input" type="checkbox" name="checkbox" disabled />
+                Disabled
+              </label>
+            </div>
+            <div class="flex gap-1">
+              <label>
+                <input class="input" type="radio" name="radio" />
+                Option 1
+              </label>
+              <label>
+                <input class="input" type="radio" name="radio" checked />
+                Option 2
+              </label>
+              <label>
+                <input class="input" type="radio" name="radio" disabled />
+                Option 3
+              </label>
+            </div>
           </form>
           <pre class="code-block">
             <code class="html">
               &lt;input class="input" type="date" name="date" /&gt;
               &lt;input class="input" type="time" name="time" /&gt;
               &lt;input class="input" type="file" name="file" /&gt;
+              &lt;label&gt;
+                    &lt;input class="input" type="checkbox" name="checkbox" /&gt;
+                    Checkbox
+              &lt;/label&gt;
+              &lt;label&gt;
+                    &lt;input class="input" type="radio" name="radio" /&gt;
+                    Option 1
+              &lt;/label&gt;
             </code>
           </pre>
         </section>
