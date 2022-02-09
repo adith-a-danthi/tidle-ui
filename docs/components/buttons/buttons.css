@@ -1,0 +1,109 @@
+.btn {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-default);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  height: fit-content;
+}
+
+.btn-icon {
+  color: currentColor;
+  margin: 0 0.25rem;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  border: 1px solid var(--color-default);
+  color: var(--color-default);
+}
+
+.btn.small {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.btn.large {
+  font-size: 1.25rem;
+}
+
+/* Regular Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-gray);
+}
+.btn-secondary:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.btn-gray {
+  background-color: var(--color-gray);
+}
+.btn-gray:hover {
+  background-color: var(--color-gray-dark);
+}
+
+/* Outlined Buttons */
+.outlined {
+  color: var(--color-default);
+  background: transparent;
+  border: 1px solid var(--color-default);
+}
+.outlined:hover {
+  background-color: var(--color-default);
+  color: white;
+}
+
+.outlined.btn-primary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.outlined.btn-primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.outlined.btn-gray {
+  border-color: var(--color-gray);
+  color: var(--color-gray);
+}
+.outlined.btn-gray:hover {
+  background-color: var(--color-gray);
+  color: white;
+}
+
+/* Other Variants */
+.btn.fab {
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fab.small-fab {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 0.875rem;
+}
+
+.btn.link {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: var(--color-gray);
+}
+.btn.link:hover {
+  text-decoration-color: var(--color-primary);
+}
