@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Avatar • tidle UI</title>
+  </head>#
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="#">Alerts</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Avatar</h2>
+        <p class="body-2">
+          Avatars are user profile pictures, usually found in circular shapes.
+          Avatars can be used for 'container' objects — projects, spaces,
+          repositories, etcetera — to give them a recognisable visual identity.
+        </p>
+
+        <!-- Avatar -->
+        <section id="avatars">
+          <hr />
+
+          <p class="heading-4">Avatar</p>
+          <div class="flex gap-1 my-4 align-items-end">
+            <img class="avatar" src="https://picsum.photos/60" alt="avatar" />
+            <div class="avatar bg-default">
+              <span class="fas fa-users fa-lg"></span>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;img class="avatar" src="..." alt="..." /&gt;
+              &lt;div class="avatar bg-default"&gt;&lt;span class="fas fa-users fa-lg"&gt;&lt;/span&gt;&lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Avatar Sizes-->
+        <section id="avatars-sizes">
+          <hr />
+
+          <h4 class="heading-4">Avatar Sizes</h4>
+          <div class="flex gap-1 my-4 align-items-end">
+            <img
+              class="avatar avatar-lg"
+              src="https://picsum.photos/50"
+              alt="avatar"
+            />
+            <img class="avatar" src="https://picsum.photos/50" alt="avatar" />
+            <img
+              class="avatar avatar-sm"
+              src="https://picsum.photos/50"
+              alt="avatar"
+            />
+            <div class="avatar bg-default avatar-lg">AV</div>
+            <div class="avatar bg-default">AV</div>
+            <div class="avatar bg-default avatar-sm">AV</div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;img class="avatar avatar-lg" src="..." alt="..." /&gt;
+              &lt;img class="avatar" src="..." alt="..." /&gt;
+              &lt;img class="avatar avatar-sm" src="..." alt="..." /&gt;
+
+              &lt;div class="avatar bg-default avatar-lg"&gt;&lt;/div&gt;
+              &lt;div class="avatar"bg-default &gt;&lt;/div&gt;
+              &lt;div class="avatar bg-default avatar-sm"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Square Avatars -->
+        <section id="square-avatars">
+          <hr />
+
+          <h4 class="heading-4">Square Avatars</h4>
+          <div class="flex gap-1 my-4 align-items-end">
+            <img
+              class="avatar square avatar-lg"
+              src="https://picsum.photos/50"
+              alt="avatar"
+            />
+            <img
+              class="avatar square"
+              src="https://picsum.photos/50"
+              alt="avatar"
+            />
+            <img
+              class="avatar square avatar-sm"
+              src="https://picsum.photos/50"
+              alt="avatar"
+            />
+            <div class="avatar square bg-default avatar-lg">AV</div>
+            <div class="avatar square bg-default">AV</div>
+            <div class="avatar square bg-default avatar-sm">AV</div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;img class="avatar square avatar-lg" src="..." alt="..." /&gt;
+              &lt;img class="avatar square" src="..." alt="..." /&gt;
+              &lt;img class="avatar square avatar-sm" src="..." alt="..." /&gt;
+
+              &lt;div class="avatar square bg-default avatar-lg"&gt;&lt;/div&gt;
+              &lt;div class="avatar square bg-default"&gt;&lt;/div&gt;
+              &lt;div class="avatar square bg-default avatar-sm"&gt;&lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="#" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Alerts
+          </a>
+          <a href="/docs/components/badge/" class="bottom-nav-link">
+            Badge <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
