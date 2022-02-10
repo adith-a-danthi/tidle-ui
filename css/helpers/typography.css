@@ -23,30 +23,35 @@
 }
 .heading-5 {
   font-size: 1.25rem;
-  font-weight: 600;
-}
-.subtitle-1 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.subtitle-2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.body-1 {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-.body-2 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
+/* Text Sizes */
+.text-xl {
+  font-size: 2rem;
+}
+.text-lg {
+  font-size: 1.5rem;
+}
+.text-md {
+  font-size: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Font Weights */
 .font-weight-light {
   font-weight: 300;
 }
 .font-weight-regular {
   font-weight: 400;
+}
+.font-weight-medium {
+  font-weight: 500;
 }
 .font-weight-semi-bold {
   font-weight: 600;
@@ -72,6 +77,34 @@
   text-align: justify;
 }
 
+/* Text Decoration */
+.text-underline {
+  text-decoration: underline;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.text-overline {
+  text-decoration: overline;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/* Text Transform */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-normal-case {
+  text-transform: none;
+}
+
 @media only screen and (max-width: 768px) {
   .content {
     max-width: 85vw;
@@ -93,16 +126,19 @@
     font-size: 1rem;
   }
 
-  .subtitle-1 {
-    font-size: 1.5rem;
+  .text-xl {
+    font-size: 1.75rem;
   }
-  .subtitle-2 {
-    font-size: 1.15rem;
+  .text-lg {
+    font-size: 1.25rem;
   }
-  .body-1 {
+  .text-md {
     font-size: 1rem;
   }
-  .body-2 {
+  .text-base {
     font-size: 0.875rem;
+  }
+  .text-sm {
+    font-size: 0.75rem;
   }
 }
