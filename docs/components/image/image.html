@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./image.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <title>Image • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Card</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/image/image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Images</h2>
+
+        <!-- Responsive Image -->
+        <section id="responsive-image">
+          <hr />
+
+          <p class="heading-4">Responsive Images</p>
+          <div class="flex gap-1 my-4">
+            <img
+              class="img-res"
+              src="https://images.unsplash.com/photo-1618320435724-e474a835b6f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="image"
+            />
+            <img
+              class="img-res"
+              src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+              alt="image"
+            />
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;img class="img-res" src="..." alt="..."&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Rounded & Square Images -->
+        <section id="rounded-images">
+          <hr />
+
+          <p class="heading-4">Rounded & Square Images</p>
+          <div class="flex gap-1 my-4">
+            <img
+              class="img-res img-rounded"
+              src="https://images.unsplash.com/photo-1642711512184-d4933d282ccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              alt="image"
+            />
+            <img
+              class="img-res img-square"
+              src="https://images.unsplash.com/photo-1643166429935-ea8fab9c4834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt="image"
+            />
+            <img
+              class="img-res img-circle"
+              src="https://picsum.photos/400"
+              alt="image"
+            />
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;img class="img-rounded" src="..." alt="..."&gt;
+              &lt;img class="img-square" src="..." alt="..."&gt;
+              &lt;img class="img-circle" src="..." alt="..."&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Image Fit -->
+        <section id="image-fit" class="mb-8">
+          <hr />
+
+          <p class="heading-4">Image Fit</p>
+          <p>
+            Use the
+            <span class="code">.fit-contain</span>
+            <span class="code">.fit-cover</span>
+            <span class="code">.fit-fill</span>
+            <span class="code">.fit-none</span>
+            CSS classes to fit an image to a container. The default value is
+            <span class="code">object-fit: cover</span>.
+          </p>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="#" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Card
+          </a>
+          <a href="#" class="bottom-nav-link">
+            Input <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

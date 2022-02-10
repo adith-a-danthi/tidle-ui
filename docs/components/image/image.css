@@ -1,0 +1,33 @@
+.img-res {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-rounded {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img-circle {
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.img-square {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+.fit-contain {
+  object-fit: contain;
+}
+.fit-fill {
+  object-fit: fill;
+}
+.fit-fill {
+  object-fit: none;
+}
