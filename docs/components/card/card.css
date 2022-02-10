@@ -1,0 +1,136 @@
+.card {
+  position: relative;
+  min-width: 0;
+  font-weight: 400;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.outlined-card {
+  border: 1px solid var(--color-secondary-dark);
+  box-shadow: none;
+}
+.outlined-card:hover {
+  box-shadow: none;
+}
+
+.card-landscape {
+  display: flex;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-weight: bold;
+}
+
+.card-body {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  left: -4px;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-default);
+  color: white;
+  font-weight: bold;
+}
+
+.card-badge.badge-primary {
+  background-color: var(--color-primary);
+}
+.card-badge.badge-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-gray);
+}
+.card-badge.badge-gray {
+  background-color: var(--color-gray);
+}
+
+.card-dismiss {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  padding: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 0.1);
+  color: var(--color-gray);
+}
+.card-dismiss:hover {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.ecomm {
+  width: 300px;
+  max-width: 300px;
+}
+
+.ecomm .card-img {
+  max-height: 300px;
+}
+
+.card-price {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.price-now {
+  font-weight: bold;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.price-before {
+  text-decoration: line-through;
+
+}
+
+.price-discount {
+  padding: 0 0.5rem;
+  color: var(--color-gray-light);
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .card-landscape {
+    flex-direction: column;
+  }
+}
