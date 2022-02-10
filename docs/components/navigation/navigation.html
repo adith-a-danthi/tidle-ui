@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <title>Navigation • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Input</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/navigation/navigation.html">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Navigation</h2>
+
+        <!-- Desktop Navbar -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Desktop Navigation</p>
+          <p>
+            To remove the elevation shadow, use <span class="code">.flat</span> class.
+          </p>
+          <div class="flex flex-col gap-1 my-4">
+            <div class="navbar">
+              <h3 class="nav-title">tidle UI</h3>
+              <ul class="nav-link-section">
+                <li class="nav-link">Components</li>
+                <li class="nav-link">Resources</li>
+                <li class="nav-link">Examples</li>
+              </ul>
+            </div>
+            <div class="navbar nav-colored">
+              <h3 class="nav-title">tidle UI</h3>
+              <ul class="nav-link-section">
+                <li class="nav-link">Components</li>
+                <li class="nav-link">Resources</li>
+                <li class="nav-link">Examples</li>
+              </ul>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="navbar"&gt;
+                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
+                  &lt;ul class="nav-link-section"&gt;
+                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
+                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
+                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
+                  &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar nav-colored"&gt;
+                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
+                  &lt;ul class="nav-link-section"&gt;
+                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
+                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
+                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
+                  &lt;/ul&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a
+            href="#"
+            class="bottom-nav-link"
+          >
+            <span class="font-weight-bold">&lt;</span> Input
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
