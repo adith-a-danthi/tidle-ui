@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <title>Grids • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <aside>
+        <nav class="sidebar">
+          <div class="list-heading">Get Started</div>
+          <ul class="list-items">
+            <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+            <li class="list-item active">
+              <a href="/docs/grids.html">Grids</a>
+            </li>
+          </ul>
+          <div class="list-heading">Components</div>
+          <ul class="list-items">
+            <li class="list-item">
+              <a href="/docs/components/alerts/alerts.html">Alerts</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Avatar</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Badge</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Buttons</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Card</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Image</a>
+            </li>
+            <li class="list-item">
+              <a href="">Input</a>
+            </li>
+            <li class="list-item">
+              <a href="">Navigation</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <main class="content">
+        <h2 class="heading-2">Grids</h2>
+        <p>Use <span class="code">.grid</span> to create a grid container.</p>
+
+        <!-- Grid Template Columns -->
+        <section id="grid-template-cols">
+          <hr />
+
+          <h4 class="heading-4">Grid Template Columns</h4>
+          <p>
+            Utilities for specifying the columns in a grid layout.
+            <span class="code">.grid-cols-2</span>,
+            <span class="code">.grid-cols-3</span>
+          </p>
+          <div class="flex flex-col gap-1 my-4">
+            <div class="grid grid-cols-2">
+              <div class="grid-item">1</div>
+              <div class="grid-item">2</div>
+            </div>
+            <div class="grid grid-cols-3">
+              <div class="grid-item bg-primary">1</div>
+              <div class="grid-item bg-primary">2</div>
+              <div class="grid-item bg-primary">3</div>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="grid grid-cols-2"&gt;
+              <-- ... -->
+            &lt;/div&gt;
+            &lt;div class="grid grid-cols-3"&gt;
+              <-- ... -->
+            &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Grid Template Rows -->
+        <section id="grid-template-rows">
+          <hr />
+
+          <h4 class="heading-4">Grid Template Rows</h4>
+          <p>
+            Utilities for specifying the rows in a grid layout.
+            <span class="code">.grid-rows-2</span>,
+            <span class="code">.grid-rows-3</span>
+          </p>
+          <div class="flex flex-col gap-1 my-4">
+            <div class="grid grid-rows-2 grid-flow-col">
+              <div class="grid-item">1</div>
+              <div class="grid-item">2</div>
+              <div class="grid-item">3</div>
+            </div>
+            <div class="grid grid-rows-3 grid-flow-col">
+              <div class="grid-item bg-primary">1</div>
+              <div class="grid-item bg-primary">2</div>
+              <div class="grid-item bg-primary">3</div>
+              <div class="grid-item bg-primary">4</div>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="grid grid-rows-2 grid-flow-col"&gt;
+              <-- ... -->
+            &lt;/div&gt;
+            &lt;div class="grid grid-rows-3 grid-flow-col"&gt;
+              <-- ... -->
+            &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Grid Utilities -->
+        <section id="grid-auto-flow">
+          <hr />
+
+          <h4 class="heading-4">Grid Utilities</h4>
+
+          <ul class="detailed-list">
+            <li>
+              <h5 class="heading-5">Grid Gap</h5>
+              <p>
+                The classes <span class="code">.gap-1</span>,
+                <span class="code">.gap-2</span> can be used to create mention
+                both column and row gap.
+              </p>
+              <p>
+                To specifiy row or column gap, use the
+                <span class="code">.row-gap-{n}</span> or
+                <span class="code">.col-gap-{n}</span> utility.
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">Grid Item Span</h5>
+              <p>
+                Use the <span class="code">.col-span-{n}</span> utilities to
+                make an element span n columns. (Max 3)
+              </p>
+              <p>
+                Use the <span class="code">.row-span-{n}</span> utilities to
+                make an element span n rows. (Max 3)
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">Grid Auto Flow</h5>
+              <p>
+                Utilities for controlling how elements in a grid are
+                auto-placed.
+              </p>
+              <p>
+                <span class="code">.grid-auto-row</span>
+                <span class="code">.grid-auto-col</span>
+                <span class="code">.grid-auto-row-dense</span>
+                <span class="code">.grid-auto-col-dense</span>
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">Place Content</h5>
+              <p>
+                Utilities for controlling how content is justified and aligned
+                at the same time.
+              </p>
+              <p>
+                <span class="code">.place-content-center</span>
+                <span class="code">.place-content-start</span>
+                <span class="code">.place-content-end</span>
+                <span class="code">.place-content-between</span>
+                <span class="code">.place-content-around</span>
+                <span class="code">.place-content-evenly</span>
+                <span class="code">.place-content-stretch</span>
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">Place Items</h5>
+              <p>
+                Utilities for controlling how items are justified and aligned at
+                the same time.
+              </p>
+              <p>
+                <span class="code">.place-items-center</span>
+                <span class="code">.place-items-start</span>
+                <span class="code">.place-items-end</span>
+                <span class="code">.place-items-stretch</span>
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">Place Self</h5>
+              <p>
+                Utilities for controlling how an individual item is justified
+                and aligned at the same time.
+              </p>
+              <p>
+                <span class="code">.place-self-auto</span>
+                <span class="code">.place-self-center</span>
+                <span class="code">.place-self-start</span>
+                <span class="code">.place-self-end</span>
+                <span class="code">.place-self-stretch</span>
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="./usage.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Usage
+          </a>
+          <a href="./components/alerts/alerts.html" class="bottom-nav-link">
+            Alerts <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </main>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
