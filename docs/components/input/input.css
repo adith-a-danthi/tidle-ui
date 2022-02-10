@@ -1,0 +1,40 @@
+.input {
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary-dark);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  height: fit-content;
+  accent-color: var(--color-default);
+  resize: none;
+}
+
+.input:disabled {
+  background-color: var(--color-secondary-dark);
+}
+
+.input.resize {
+  resize: both;
+}
+.input.resize-x {
+  resize: horizontal;
+}
+.input.resize-y {
+  resize: vertical;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-gray);
+}
+
+.input.input-valid,
+.input.validate:valid,
+.input.validate:in-range {
+  border-color: var(--color-success);
+}
+.input.input-invalid,
+.input.validate:invalid,
+.input.validate:out-of-range {
+  border-color: var(--color-error);
+}

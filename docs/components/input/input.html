@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <title>Input • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="#">Image</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/input/input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Input Fields</h2>
+
+        <!-- Text Fields -->
+        <section id="text-fields">
+          <hr />
+
+          <p class="heading-4">Text Fields</p>
+          <form class="flex flex-col gap-1 my-4">
+            <input class="input" type="text" placeholder="Username" />
+            <textarea
+              class="input"
+              name="textarea"
+              id="textarea"
+              placeholder="Description"
+              rows="5"
+            ></textarea>
+          </form>
+          <p>
+            Textarea resizing can be enabled using the classes
+            <span class="code">.resize</span>
+            <span class="code">.resize-x</span>
+            <span class="code">.resize-y</span>
+            .
+          </p>
+          <pre class="code-block">
+            <code class="html">
+              &lt;input class="input" type="text" placeholder="Username" /&gt;
+              &lt;textarea class="input" name="textarea" id="textarea" placeholder="Description" cols="30" rows="10"&gt;&lt;/textarea&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Form Validation -->
+        <section id="form-validation">
+          <hr />
+
+          <p class="heading-4">Form Validation</p>
+          <p>
+            To add validation to a input, add the class
+            <span class="code">.validate</span>
+            to the input element.
+          </p>
+          <p>
+            To force the input to valid or invalid states, add the class
+            <span class="code">.input-valid</span> or
+            <span class="code">.input-invalid</span>
+            to the input element.
+          </p>
+          <form class="flex flex-col gap-1 my-4">
+            <input
+              class="input validate"
+              type="number"
+              placeholder="Enter a number between 0 & 10"
+              min="1"
+              max="10"
+              required
+            />
+            <input class="input input-valid" type="text" placeholder="Email" />
+            <input
+              class="input input-invalid"
+              type="text"
+              placeholder="Password"
+            />
+          </form>
+          <pre class="code-block">
+            <code class="html">
+            &lt;input class="input validate" type="number" placeholder="Enter a number between 0 & 10" min="1" max="10" required /&gt;
+            &lt;input class="input input-valid" type="text" placeholder="Email" /&gt;
+            &lt;input class="input input-invalid" type="text" placeholder="Password" /&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Other Fields -->
+        <section id="text-fields">
+          <hr />
+
+          <p class="heading-4">Other Fields</p>
+          <form class="flex flex-col gap-1 my-4">
+            <input class="input" type="date" name="date" />
+            <input class="input" type="time" name="time" />
+            <input class="input" type="file" name="file" />
+            <div class="flex gap-1">
+              <label>
+                <input class="input" type="checkbox" name="checkbox" />
+                Checkbox
+              </label>
+              <label>
+                <input class="input" type="checkbox" name="checkbox" checked />
+                Checkbox
+              </label>
+              <label>
+                <input class="input" type="checkbox" name="checkbox" disabled />
+                Disabled
+              </label>
+            </div>
+            <div class="flex gap-1">
+              <label>
+                <input class="input" type="radio" name="radio" />
+                Option 1
+              </label>
+              <label>
+                <input class="input" type="radio" name="radio" checked />
+                Option 2
+              </label>
+              <label>
+                <input class="input" type="radio" name="radio" disabled />
+                Option 3
+              </label>
+            </div>
+          </form>
+          <pre class="code-block">
+            <code class="html">
+              &lt;input class="input" type="date" name="date" /&gt;
+              &lt;input class="input" type="time" name="time" /&gt;
+              &lt;input class="input" type="file" name="file" /&gt;
+              &lt;label&gt;
+                    &lt;input class="input" type="checkbox" name="checkbox" /&gt;
+                    Checkbox
+              &lt;/label&gt;
+              &lt;label&gt;
+                    &lt;input class="input" type="radio" name="radio" /&gt;
+                    Option 1
+              &lt;/label&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="#" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Image
+          </a>
+          <a href="#" class="bottom-nav-link">
+            Navigation <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
