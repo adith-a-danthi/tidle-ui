@@ -26,6 +26,7 @@
   height: auto;
   background-repeat: no-repeat;
   object-fit: cover;
+  object-position: center;
 }
 
 .card-content {
