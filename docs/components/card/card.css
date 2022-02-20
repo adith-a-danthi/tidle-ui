@@ -1,12 +1,17 @@
+:root {
+  --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --card-shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 .card {
   position: relative;
   min-width: 0;
   font-weight: 400;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  background-color: var(--color-white);
+  box-shadow: var(--card-shadow);
 }
 .card:hover {
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .outlined-card {
@@ -50,7 +55,7 @@
   left: -4px;
   padding: 0.25rem 0.5rem;
   background-color: var(--color-default);
-  color: white;
+  color: var(--color-white);
   font-weight: bold;
 }
 
@@ -92,7 +97,7 @@
   justify-content: flex-end;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: var(--color-white);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -106,7 +111,7 @@
 }
 
 .ecomm .card-img {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .card-price {

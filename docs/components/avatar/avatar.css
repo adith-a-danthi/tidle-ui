@@ -4,7 +4,7 @@
   margin: 0 10px;
   border-radius: 50%;
   background-color: var(--color-secondary-dark);
-  color: white;
+  color: var(--color-white);
   font-weight: bold;
   overflow: hidden;
   display: flex;

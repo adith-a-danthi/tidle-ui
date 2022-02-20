@@ -12,9 +12,9 @@
   right: 0.25rem;
   padding: 0.25rem;
   border-radius: 100vh;
-  border: 3px solid white;
+  border: 3px solid var(--color-white);
   background-color: var(--color-default);
-  color: white;
+  color: var(--color-white);
   font-size: 0.6rem;
   font-weight: 900;
   display: flex;

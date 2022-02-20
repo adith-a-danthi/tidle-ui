@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: var(--color-white);
   z-index: 2;
 }
 
@@ -114,7 +114,7 @@
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--color-default);
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   font-weight: bold;
 }

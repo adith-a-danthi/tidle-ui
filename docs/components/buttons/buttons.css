@@ -3,7 +3,7 @@
   outline: none;
   border: none;
   background-color: var(--color-default);
-  color: white;
+  color: var(--color-white);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -62,7 +62,7 @@
 }
 .outlined:hover {
   background-color: var(--color-default);
-  color: white;
+  color: var(--color-white);
 }
 
 .outlined.btn-primary {
@@ -71,7 +71,7 @@
 }
 .outlined.btn-primary:hover {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
 }
 
 .outlined.btn-gray {
@@ -80,7 +80,7 @@
 }
 .outlined.btn-gray:hover {
   background-color: var(--color-gray);
-  color: white;
+  color: var(--color-white);
 }
 
 /* Other Variants */

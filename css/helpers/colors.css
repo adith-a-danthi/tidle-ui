@@ -26,7 +26,7 @@
   color: var(--color-info);
 }
 .text-white {
-  color: white;
+  color: var(--color-white);
 }
 
 /* Background Colors */
@@ -55,5 +55,5 @@
   background-color: var(--color-info);
 }
 .bg-white {
-  background-color: white;
+  background-color: var(--color-white);
 }
