@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./rating.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Rating • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+          <li class="list-item">
+            <a href="/docs/typography.html">Typography</a>
+          </li>
+          <li class="list-item"><a href="/docs/grids.html">Grid</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/buttons/buttons.html">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/card/card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/image/image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/input/input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/rating/rating.html">Rating</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Rating</h2>
+
+        <!-- Basic Rating -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Basic Rating</p>
+          <p class="text-base">
+            Use the
+            <span class="code">.rating</span> class on the parent element and
+            <span class="code">.star</span> class on the icon.
+          </p>
+          <div class="flex flex-col gap-1 my-4">
+            <div class="rating">
+              <input type="radio" name="rating" id="star5" value="5" />
+              <label for="star5" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star4" value="4" />
+              <label for="star4" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star3" value="3" />
+              <label for="star3" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star2" value="2" />
+              <label for="star2" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star1" value="1" />
+              <label for="star1" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="rating"&gt;
+                &lt;input type="radio" name="rating" id="star5" value="5" /&gt;
+                &lt;label for="star5" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star4" value="4" /&gt;
+                &lt;label for="star4" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star3" value="3" /&gt;
+                &lt;label for="star3" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star2" value="2" /&gt;
+                &lt;label for="star2" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star1" value="1" /&gt;
+                &lt;label for="star1" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a
+            href="/docs/components/navigation/navigation.html"
+            class="bottom-nav-link"
+          >
+            <span class="font-weight-bold">&lt;</span> Navigation
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
