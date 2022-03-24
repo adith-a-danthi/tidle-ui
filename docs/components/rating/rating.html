@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="/css/_reset.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <link rel="stylesheet" href="./navigation.css" />
+    <link rel="stylesheet" href="./rating.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
     />
-    <title>Navigation • tidle UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Rating • tidle UI</title>
   </head>
   <body>
     <main class="container docs">
@@ -54,10 +58,10 @@
           <li class="list-item">
             <a href="/docs/components/input/input.html">Input</a>
           </li>
-          <li class="list-item active">
+          <li class="list-item">
             <a href="/docs/components/navigation/navigation.html">Navigation</a>
           </li>
-          <li class="list-item">
+          <li class="list-item active">
             <a href="/docs/components/rating/rating.html">Rating</a>
           </li>
         </ul>
@@ -65,51 +69,65 @@
 
       <!-- Content -->
       <div class="content">
-        <h2 class="heading-2">Navigation</h2>
+        <h2 class="heading-2">Rating</h2>
 
-        <!-- Desktop Navbar -->
+        <!-- Basic Rating -->
         <section>
           <hr />
 
-          <p class="heading-4">Desktop Navigation</p>
+          <p class="heading-4">Basic Rating</p>
           <p class="text-base">
-            To remove the elevation shadow, use <span class="code">.flat</span> class.
+            Use the
+            <span class="code">.rating</span> class on the parent element and
+            <span class="code">.star</span> class on the icon.
           </p>
           <div class="flex flex-col gap-1 my-4">
-            <div class="navbar">
-              <h3 class="nav-title">tidle UI</h3>
-              <ul class="nav-link-section">
-                <li class="nav-link">Components</li>
-                <li class="nav-link">Resources</li>
-                <li class="nav-link">Examples</li>
-              </ul>
-            </div>
-            <div class="navbar nav-colored">
-              <h3 class="nav-title">tidle UI</h3>
-              <ul class="nav-link-section">
-                <li class="nav-link">Components</li>
-                <li class="nav-link">Resources</li>
-                <li class="nav-link">Examples</li>
-              </ul>
+            <div class="rating">
+              <input type="radio" name="rating" id="star5" value="5" />
+              <label for="star5" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star4" value="4" />
+              <label for="star4" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star3" value="3" />
+              <label for="star3" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star2" value="2" />
+              <label for="star2" class="star">
+                <i class="fas fa-star"></i>
+              </label>
+              <input type="radio" name="rating" id="star1" value="1" />
+              <label for="star1" class="star">
+                <i class="fas fa-star"></i>
+              </label>
             </div>
           </div>
           <pre class="code-block">
             <code class="html">
-            &lt;div class="navbar"&gt;
-                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
-                  &lt;ul class="nav-link-section"&gt;
-                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
-                  &lt;/ul&gt;
-            &lt;/div&gt;
-            &lt;div class="navbar nav-colored"&gt;
-                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
-                  &lt;ul class="nav-link-section"&gt;
-                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
-                  &lt;/ul&gt;
+            &lt;div class="rating"&gt;
+                &lt;input type="radio" name="rating" id="star5" value="5" /&gt;
+                &lt;label for="star5" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star4" value="4" /&gt;
+                &lt;label for="star4" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star3" value="3" /&gt;
+                &lt;label for="star3" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star2" value="2" /&gt;
+                &lt;label for="star2" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
+                &lt;input type="radio" name="rating" id="star1" value="1" /&gt;
+                &lt;label for="star1" class="star"&gt;
+                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+                &lt;/label&gt;
             &lt;/div&gt;
             </code>
           </pre>
@@ -118,16 +136,10 @@
         <!-- Bottom Navigation -->
         <footer class="bottom-nav">
           <a
-            href="/docs/components/input/input.html"
+            href="/docs/components/navigation/navigation.html"
             class="bottom-nav-link"
           >
-            <span class="font-weight-bold">&lt;</span> Input
-          </a>
-          <a
-            href="/docs/components/rating/rating.html"
-            class="bottom-nav-link"
-          >
-            Rating <span class="font-weight-bold">&gt;</span>
+            <span class="font-weight-bold">&lt;</span> Navigation
           </a>
         </footer>
       </div>

@@ -1,0 +1,29 @@
+:root {
+  --color-rating-hover: #fbbf24;
+  --color-rating-active: #f59e0b;
+}
+
+.rating {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-end;
+  gap: 0.25rem;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating .star {
+  color: grey;
+  cursor: pointer;
+}
+
+.rating :checked ~ .star {
+  color: var(--color-rating-active);
+}
+
+.rating :hover,
+.rating :hover ~ .star {
+  color: var(--color-rating-hover);
+}
