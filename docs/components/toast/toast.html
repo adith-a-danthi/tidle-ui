@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/_reset.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <link rel="stylesheet" href="./rating.css" />
+    <link rel="stylesheet" href="./toast.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <title>Rating • tidle UI</title>
+    <title>Toast • tidle UI</title>
   </head>
   <body>
     <main class="container docs">
@@ -64,10 +64,10 @@
           <li class="list-item">
             <a href="/docs/components/navigation/navigation.html">Navigation</a>
           </li>
-          <li class="list-item active">
+          <li class="list-item">
             <a href="/docs/components/rating/rating.html">Rating</a>
           </li>
-          <li class="list-item">
+          <li class="list-item active">
             <a href="/docs/components/toast/toast.html">Toast</a>
           </li>
         </ul>
@@ -75,80 +75,81 @@
 
       <!-- Content -->
       <div class="content">
-        <h2 class="heading-2">Rating</h2>
+        <h2 class="heading-2">Toast</h2>
 
-        <!-- Basic Rating -->
+        <!-- Simple Toast -->
         <section>
           <hr />
 
-          <p class="heading-4">Basic Rating</p>
+          <p class="heading-4">Simple Toast</p>
           <p class="text-base">
             Use the
-            <span class="code">.rating</span> class on the parent element and
-            <span class="code">.star</span> class on the icon.
+            <span class="code">.toast</span> class to create a toast. To remove
+            elevation from the toast, add the
+            <span class="code">.flat</span> class.
           </p>
-          <div class="flex flex-col gap-1 my-4">
-            <div class="rating">
-              <input type="radio" name="rating" id="star5" value="5" />
-              <label for="star5" class="star">
-                <i class="fas fa-star"></i>
-              </label>
-              <input type="radio" name="rating" id="star4" value="4" />
-              <label for="star4" class="star">
-                <i class="fas fa-star"></i>
-              </label>
-              <input type="radio" name="rating" id="star3" value="3" />
-              <label for="star3" class="star">
-                <i class="fas fa-star"></i>
-              </label>
-              <input type="radio" name="rating" id="star2" value="2" />
-              <label for="star2" class="star">
-                <i class="fas fa-star"></i>
-              </label>
-              <input type="radio" name="rating" id="star1" value="1" />
-              <label for="star1" class="star">
-                <i class="fas fa-star"></i>
-              </label>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+            <div class="toast toast-secondary">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
             </div>
           </div>
           <pre class="code-block">
             <code class="html">
-            &lt;div class="rating"&gt;
-                &lt;input type="radio" name="rating" id="star5" value="5" /&gt;
-                &lt;label for="star5" class="star"&gt;
-                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
-                &lt;/label&gt;
-                &lt;input type="radio" name="rating" id="star4" value="4" /&gt;
-                &lt;label for="star4" class="star"&gt;
-                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
-                &lt;/label&gt;
-                &lt;input type="radio" name="rating" id="star3" value="3" /&gt;
-                &lt;label for="star3" class="star"&gt;
-                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
-                &lt;/label&gt;
-                &lt;input type="radio" name="rating" id="star2" value="2" /&gt;
-                &lt;label for="star2" class="star"&gt;
-                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
-                &lt;/label&gt;
-                &lt;input type="radio" name="rating" id="star1" value="1" /&gt;
-                &lt;label for="star1" class="star"&gt;
-                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;
-                &lt;/label&gt;
-            &lt;/div&gt;
+            &lt;div class="toast"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary"&gt;Lorem ipsum ... &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bordered Toast -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Bordered Toast</p>
+          <p class="text-base">
+            Use the
+            <span class="code">.toast-bordered</span> class to get the side
+            border.
+          </p>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+            <div class="toast toast-secondary toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="toast toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
             </code>
           </pre>
         </section>
 
         <!-- Bottom Navigation -->
         <footer class="bottom-nav">
-          <a
-            href="/docs/components/navigation/navigation.html"
-            class="bottom-nav-link"
-          >
-            <span class="font-weight-bold">&lt;</span> Navigation
-          </a>
-          <a href="/docs/components/toast/toast.html" class="bottom-nav-link">
-            Toast <span class="font-weight-bold">&gt;</span>
+          <a href="/docs/components/rating/rating.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Rating
           </a>
         </footer>
       </div>
