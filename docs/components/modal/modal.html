@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="../buttons/buttons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Modal • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+          <li class="list-item">
+            <a href="/docs/typography.html">Typography</a>
+          </li>
+          <li class="list-item"><a href="/docs/grids.html">Grid</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/buttons/buttons.html">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/card/card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/image/image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/input/input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/list/list.html">List</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/modal/modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/rating/rating.html">Rating</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/toast/toast.html">Toast</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Modal</h2>
+
+        <!-- Basic Modal -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Basic Modal</p>
+          <p class="text-base">
+            The basic modal requires <code class="code">.modal-window</code> &
+            <code class="code">.modal</code> classes.
+          </p>
+          <div class="my-4">
+            <button class="btn btn-primary" id="open-modal">Open Modal</button>
+            <div class="modal-window">
+              <div class="modal">
+                <h4 class="heading-4 mb-2">Basic Modal</h4>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia, ab quia vel, incidunt tempora numquam corrupti in et
+                  ducimus doloribus nulla quam soluta libero temporibus
+                  exercitationem eos similique quaerat magnam.
+                </p>
+                <div class="mt-4">
+                  <button class="btn btn-primary" id="close-modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;div id="modal-window"&gt;
+                  &lt;div class="modal"&gt;
+                      &lt;!-- Modal Content --&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+          <p class="text-base">
+            JavaScript is not included in the library. In a script element (or
+            in a seperate .js file), add the following JS code:
+          </p>
+          <pre class="code-block">
+            <code class="js">
+              const openBtn = document.getElementById("open-modal");
+              const closeBtn = document.getElementById("close-modal");
+
+              const modalWindow = document.querySelector(".modal-window");
+
+              openBtn.addEventListener("click", () => {
+                  modalWindow.classList.add("is-active");
+              });
+              closeBtn.addEventListener("click", () => {
+                  modalWindow.classList.remove("is-active");
+              });
+            </code>
+          </pre>
+        </section>
+
+        <!-- Basic Modal w/ dialog -->
+        <section>
+          <hr />
+
+          <p class="heading-4">
+            Basic Modal using <code class="code">&lt;dialog&gt;</code>
+          </p>
+          <p class="text-base">
+            If you use the new <code class="code">&lt;dialog&gt;</code> element
+            then you don't need the
+            <code class="code">.modal-window</code> class in the parent element.
+          </p>
+          <div class="my-4">
+            <button class="btn btn-primary" id="open-modal-dialog">
+              Open Modal
+            </button>
+            <dialog id="demo-modal" class="modal">
+              <h4 class="heading-4 mb-2">
+                Basic Modal using <code class="code">&lt;dialog&gt;</code>
+              </h4>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, ab quia vel, incidunt tempora numquam corrupti in et
+                ducimus doloribus nulla quam soluta libero temporibus
+                exercitationem eos similique quaerat magnam.
+              </p>
+              <div class="mt-4">
+                <button class="btn btn-primary" id="close-modal-dialog">
+                  Close
+                </button>
+              </div>
+            </dialog>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+              &lt;dialog id="demo-modal" class="modal"&gt;
+                  &lt;!-- Modal Content --&gt;
+              &lt;/dialog&gt;
+            </code>
+          </pre>
+          <p class="text-base">
+            JavaScript is not included in the library. To trigger and close the
+            modal, you can refer to the code below:
+          </p>
+          <pre class="code-block">
+            <code class="js">
+            const openBtnDialog = document.getElementById("open-modal-dialog");
+            const closeBtnDialog = document.getElementById("close-modal-dialog");
+
+            const modal = document.getElementById("demo-modal");
+
+            openBtnDialog.addEventListener("click", () => modal.showModal());
+            closeBtnDialog.addEventListener("click", () => modal.close());
+            </code>
+          </pre>
+        </section>
+
+        <!-- Options -->
+        <section class="mb-4">
+          <hr />
+
+          <h4 class="heading-4">Options</h4>
+          <p class="text-base">
+            You can use the <code class="code">.flat</code> class to remove the
+            modal shadow.
+          </p>
+          <p class="text-base">
+            There are two additional sizes of modals, that can be used by adding
+            the following classes
+            <code class="code">.small</code> and
+            <code class="code">.large</code>.
+          </p>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/components/list/list.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> List
+          </a>
+          <a
+            href="/docs/components/navigation/navigation.html"
+            class="bottom-nav-link"
+          >
+            Navigation <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
