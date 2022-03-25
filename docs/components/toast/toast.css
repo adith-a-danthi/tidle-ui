@@ -1,0 +1,28 @@
+.toast {
+  padding: 1rem 1.5rem;
+  background-color: var(--color-default);
+  color: var(--color-white);
+  position: relative;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.toast-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-gray);
+}
+
+.toast-bordered {
+  border-left: 6px solid var(--color-primary);
+}
+
+.toast-secondary.toast-bordered {
+  border-left: 6px solid var(--color-default);
+}
+
+.toast-gray {
+  background-color: var(--color-gray);
+}
+
+.toast.flat {
+  box-shadow: none;
+}

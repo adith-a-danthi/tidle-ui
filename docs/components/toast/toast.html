@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./toast.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Toast • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+          <li class="list-item">
+            <a href="/docs/typography.html">Typography</a>
+          </li>
+          <li class="list-item"><a href="/docs/grids.html">Grid</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/buttons/buttons.html">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/card/card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/image/image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/input/input.html">Input</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/list/list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/rating/rating.html">Rating</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/toast/toast.html">Toast</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Toast</h2>
+
+        <!-- Simple Toast -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Simple Toast</p>
+          <p class="text-base">
+            Use the
+            <span class="code">.toast</span> class to create a toast. To remove
+            elevation from the toast, add the
+            <span class="code">.flat</span> class.
+          </p>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+            <div class="toast toast-secondary">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="toast"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary"&gt;Lorem ipsum ... &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bordered Toast -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Bordered Toast</p>
+          <p class="text-base">
+            Use the
+            <span class="code">.toast-bordered</span> class to get the side
+            border.
+          </p>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+            <div class="toast toast-secondary toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="toast toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/components/rating/rating.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Rating
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
