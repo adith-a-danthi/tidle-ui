@@ -126,6 +126,11 @@
   margin-bottom: 1rem;
 }
 
+.list-position-demo {
+  border-left: 2px solid var(--color-primary);
+  margin-right: 2rem;
+}
+
 @media only screen and (max-width: 768px) {
   .docs {
     display: block;
