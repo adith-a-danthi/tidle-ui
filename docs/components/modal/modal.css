@@ -1,0 +1,45 @@
+.modal-window {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  margin: 2rem;
+  padding: 2rem;
+  max-width: 40rem;
+  max-height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  background-color: var(--color-white);
+}
+
+.modal-window.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.modal.flat {
+  box-shadow: none;
+}
+
+.modal.small {
+  max-width: 20rem;
+}
+
+.modal.large {
+  max-width: 80vw;
+}
