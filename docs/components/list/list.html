@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/_reset.css" />
+    <link rel="stylesheet" href="../avatar/avatar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <link rel="stylesheet" href="./list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>List • tidle UI</title>
+  </head>
+  <body>
+    <main class="container docs">
+      <!-- Header -->
+      <header class="nav">
+        <h3 class="nav-title"><a href="/">tidle UI</a></h3>
+      </header>
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="list-heading">Get Started</div>
+        <ul class="list-items">
+          <li class="list-item"><a href="/docs/usage.html">Usage</a></li>
+          <li class="list-item">
+            <a href="/docs/typography.html">Typography</a>
+          </li>
+          <li class="list-item"><a href="/docs/grids.html">Grid</a></li>
+        </ul>
+        <div class="list-heading">Components</div>
+        <ul class="list-items">
+          <li class="list-item">
+            <a href="/docs/components/alerts/alerts.html">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/buttons/buttons.html">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/card/card.html">Card</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/image/image.html">Image</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/input/input.html">Input</a>
+          </li>
+          <li class="list-item active">
+            <a href="/docs/components/list/list.html">List</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/modal/modal.html">Modal</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/rating/rating.html">Rating</a>
+          </li>
+          <li class="list-item">
+            <a href="/docs/components/toast/toast.html">Toast</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <h2 class="heading-2">Lists</h2>
+
+        <!-- Simple Lists -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Simple Lists</p>
+          <p class="text-base">
+            Use the <code class="code">.list</code> class to create a list. Use
+            <code class="code">.list-accent</code> for an colored list item
+            marker.
+          </p>
+          <div class="flex gap-2 my-4">
+            <ul class="list">
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+              <li>List item 5</li>
+            </ul>
+
+            <ol class="list mx-8">
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+              <li>List item 5</li>
+            </ol>
+
+            <ul class="list list-accent">
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+              <li>List item 5</li>
+            </ul>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;!-- Unordered List --&gt;
+            &lt;ul class="list"&gt;
+                &lt;li&gt;List item 1&lt;/li&gt;
+                ...
+            &lt;/ul&gt;
+            &lt;!-- Ordered List --&gt;
+            &lt;ol class="list"&gt;
+                &lt;li&gt;List item 1&lt;/li&gt;
+                ...
+            &lt;/ol&gt;
+            &lt;!-- Colored List --&gt;
+            &lt;ul class="list list-accent"&gt;
+                &lt;li&gt;List item 1&lt;/li&gt;
+                ...
+            &lt;/ul&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- List Group -->
+        <section id="list-group">
+          <hr />
+
+          <p class="heading-4">List Group</p>
+          <p class="text-base">
+            Use the <code class="code">.list-group</code> class to create a
+            stacked list. To add item separators, add the
+            <code class="code">.list-separators</code> class.
+          </p>
+          <div class="flex gap-2 my-4">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="avatar bg-default avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Roronoa Zoro</p>
+              </li>
+              <li class="list-group-item">
+                <div class="avatar bg-primary avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Itachi Uchiha</p>
+              </li>
+              <li class="list-group-item">
+                <div class="avatar bg-gray avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Gojo Satoru</p>
+              </li>
+            </ul>
+            <ul class="list-group list-separators">
+              <li class="list-group-item">
+                <div class="avatar bg-default avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Monkey D Luffy</p>
+              </li>
+              <li class="list-group-item">
+                <div class="avatar bg-primary avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Namikaze Minato</p>
+              </li>
+              <li class="list-group-item">
+                <div class="avatar bg-gray avatar-sm">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p class="text-base">Madara Uchiha</p>
+              </li>
+            </ul>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;ul class="list-group"&gt;
+                &lt;li class="list-group-item"&gt;
+                    &lt;div class="avatar bg-default avatar-sm"&gt;
+                        &lt;i class="fas fa-user"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;p class="text-base"&gt;Roronoa Zoro&lt;/p&gt;
+                &lt;/li&gt;
+                ...
+            &lt;/ul&gt;
+
+            &lt;!-- w/ List item separators --&gt;
+            &lt;ul class="list-group list-separators"&gt;
+                &lt;li class="list-group-item"&gt; ... &lt;/li&gt;
+                ...
+            &lt;/ul&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- List Utilities -->
+        <section id="list-utilities">
+          <hr />
+
+          <h4 class="heading-4">List Utilities</h4>
+
+          <ul class="detailed-list">
+            <li class="mt-2">
+              <h5 class="heading-5">List Style</h5>
+              <p>
+                Utilities for controlling the bullet/number style of a list.
+              </p>
+              <p>
+                <code class="code">.list-none</code>,
+                <code class="code">.list-disc</code>,
+                <code class="code">.list-decimal</code>,
+                <code class="code">.list-circle</code>,
+                <code class="code">.list-square</code>.
+              </p>
+            </li>
+            <li>
+              <h5 class="heading-5">List Style Postiion</h5>
+              <p>
+                Utilities for controlling the position of bullets/numbers in
+                lists.
+              </p>
+              <p>
+                <code class="code">.list-inside</code>,
+                <code class="code">.list-outside</code>.
+              </p>
+              <div class="flex gap-2">
+                <div>
+                  <p class="font-weight-bold">List Inside</p>
+                  <ul class="list list-inside list-position-demo">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-weight-bold">List Outside</p>
+                  <ul class="list list-outside list-position-demo">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-nav">
+          <a href="/docs/components/input/input.html" class="bottom-nav-link">
+            <span class="font-weight-bold">&lt;</span> Input
+          </a>
+          <a
+            href="/docs/components/modal/modal.html"
+            class="bottom-nav-link"
+          >
+            Modal <span class="font-weight-bold">&gt;</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

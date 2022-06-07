@@ -18,7 +18,11 @@ To use **tidle-ui** in your project, just add the following to your `<head>` tag
 - Card
 - Images
 - Input
+- Lists
+- Modal
 - Navigation
+- Rating
+- Toast
 
 ### Utility Classes
 - Grid

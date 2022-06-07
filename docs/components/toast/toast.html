@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="/css/_reset.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <link rel="stylesheet" href="./navigation.css" />
+    <link rel="stylesheet" href="./toast.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/night-owl.min.css"
     />
-    <title>Navigation • tidle UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Toast • tidle UI</title>
   </head>
   <body>
     <main class="container docs">
@@ -60,13 +64,13 @@
           <li class="list-item">
             <a href="/docs/components/modal/modal.html">Modal</a>
           </li>
-          <li class="list-item active">
+          <li class="list-item">
             <a href="/docs/components/navigation/navigation.html">Navigation</a>
           </li>
           <li class="list-item">
             <a href="/docs/components/rating/rating.html">Rating</a>
           </li>
-          <li class="list-item">
+          <li class="list-item active">
             <a href="/docs/components/toast/toast.html">Toast</a>
           </li>
         </ul>
@@ -74,64 +78,81 @@
 
       <!-- Content -->
       <div class="content">
-        <h2 class="heading-2">Navigation</h2>
+        <h2 class="heading-2">Toast</h2>
 
-        <!-- Desktop Navbar -->
+        <!-- Simple Toast -->
         <section>
           <hr />
 
-          <p class="heading-4">Desktop Navigation</p>
+          <p class="heading-4">Simple Toast</p>
           <p class="text-base">
-            To remove the elevation shadow, use
+            Use the
+            <span class="code">.toast</span> class to create a toast. To remove
+            elevation from the toast, add the
             <span class="code">.flat</span> class.
           </p>
-          <div class="flex flex-col gap-1 my-4">
-            <div class="navbar">
-              <h3 class="nav-title">tidle UI</h3>
-              <ul class="nav-link-section">
-                <li class="nav-link">Components</li>
-                <li class="nav-link">Resources</li>
-                <li class="nav-link">Examples</li>
-              </ul>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
             </div>
-            <div class="navbar nav-colored">
-              <h3 class="nav-title">tidle UI</h3>
-              <ul class="nav-link-section">
-                <li class="nav-link">Components</li>
-                <li class="nav-link">Resources</li>
-                <li class="nav-link">Examples</li>
-              </ul>
+            <div class="toast toast-secondary">
+              <p class="text-md">Simple Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
             </div>
           </div>
           <pre class="code-block">
             <code class="html">
-            &lt;div class="navbar"&gt;
-                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
-                  &lt;ul class="nav-link-section"&gt;
-                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
-                  &lt;/ul&gt;
-            &lt;/div&gt;
-            &lt;div class="navbar nav-colored"&gt;
-                  &lt;h3 class="nav-title"&gt;tidle UI&lt;/h3&gt;
-                  &lt;ul class="nav-link-section"&gt;
-                      &lt;li class="nav-link"&gt;Components&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Resources&lt;/li&gt;
-                      &lt;li class="nav-link"&gt;Examples&lt;/li&gt;
-                  &lt;/ul&gt;
-            &lt;/div&gt;
+            &lt;div class="toast"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary"&gt;Lorem ipsum ... &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Bordered Toast -->
+        <section>
+          <hr />
+
+          <p class="heading-4">Bordered Toast</p>
+          <p class="text-base">
+            Use the
+            <span class="code">.toast-bordered</span> class to get the side
+            border.
+          </p>
+          <div class="grid grid-cols-2 gap-2 my-4 fluid-grid">
+            <div class="toast toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+            <div class="toast toast-secondary toast-bordered">
+              <p class="text-md">Bordered Toast</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              nesciunt suscipit, doloribus qui culpa repellendus quibusdam
+              assumenda sed doloremque consequatur architecto deleniti ipsa,
+              dolores praesentium inventore quam ratione sapiente fuga.
+            </div>
+          </div>
+          <pre class="code-block">
+            <code class="html">
+            &lt;div class="toast toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
+            &lt;div class="toast toast-secondary toast-bordered"&gt;Lorem ipsum ... &lt;/div&gt;
             </code>
           </pre>
         </section>
 
         <!-- Bottom Navigation -->
         <footer class="bottom-nav">
-          <a href="/docs/components/modal/modal.html" class="bottom-nav-link">
-            <span class="font-weight-bold">&lt;</span> Modal
-          </a>
           <a href="/docs/components/rating/rating.html" class="bottom-nav-link">
-            Rating <span class="font-weight-bold">&gt;</span>
+            <span class="font-weight-bold">&lt;</span> Rating
           </a>
         </footer>
       </div>
