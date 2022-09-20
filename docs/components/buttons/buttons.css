@@ -51,7 +51,7 @@
   background-color: var(--color-gray);
 }
 .btn-gray:hover {
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-gray-light);
 }
 
 /* Outlined Buttons */
@@ -101,7 +101,8 @@
 .btn.link {
   background-color: transparent;
   border: none;
-  text-decoration: underline;
+  text-decoration: underline 2px;
+  text-underline-offset: 1px;
   color: var(--color-gray);
 }
 .btn.link:hover {
